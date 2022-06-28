@@ -6,4 +6,5 @@ Feature: Purchase Functionality of Demoblaze Application
     Given buyer is on the homepage of demoblaze
     When buyer adds from "Laptops" category "Sony vaio i5" product to cart
     And buyer clicks on "Cart" link
+    Then buyer should see "Sony vaio i5" is added to cart
 
