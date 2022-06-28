@@ -22,7 +22,9 @@ public class TestStepDefs {
     @When("buyer adds from {string} category {string} product to cart")
     public void buyer_adds_from_category_product_to_cart(String category, String product) {
         productPage.getLink(category);
+        BrowserUtils.sleep(1);
         productPage.getLink(product);
+        BrowserUtils.sleep(1);
         productPage.getLink("Add to cart");
         // handle alert
        // BrowserUtils.sleep(1); static wait
